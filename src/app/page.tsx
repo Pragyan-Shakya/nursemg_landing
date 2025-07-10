@@ -8,17 +8,19 @@ export default function Home() {
 	return (
 		<div>
 			<div className=' bg-purple-primary overflow-hidden'>
-				{/* Header */}
 				<header className='bg-purple-primary'>
 					<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-4'>
 						<div className='flex justify-between items-center'>
 							<div className='flex items-center gap-2'>
-								<Image
-									src='/assets/logo.svg'
-									alt='NCLEX Logo'
-									width={106}
-									height={24}
-								/>
+								<Link href='/'>
+									<Image
+										src='/assets/logo.svg'
+										alt='NCLEX Logo'
+										width={106}
+										height={24}
+										className='cursor-pointer'
+									/>
+								</Link>
 							</div>
 
 							<nav className='flex items-center gap-4 sm:gap-8'>
@@ -28,7 +30,7 @@ export default function Home() {
 									Blogs
 								</Link>
 								<a
-									href='#'
+									href='#faq'
 									className='text-white hover:text-orange-300 transition-colors font-medium text-sm sm:text-[15px]'>
 									FAQs
 								</a>
@@ -50,20 +52,18 @@ export default function Home() {
 							</nav>
 						</div>
 					</div>
+
+					<Image
+						title='Hero Image'
+						src='/assets/border.svg'
+						alt='Hero Image'
+						width={1920}
+						height={1080}
+					/>
 				</header>
 
-				<Image
-					title='Hero Image'
-					src='/assets/border.svg'
-					alt='Hero Image'
-					width={1920}
-					height={1080}
-				/>
-
-				{/* Hero Section */}
 				<main className='relative text-center px-4 sm:px-6 py-8 sm:py-10'>
 					<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-						{/* Top banner */}
 						<div className='inline-flex items-center gap-2 border-1 border-[#F3BA58] text-[#F3BA58] px-3 sm:px-4 py-2 rounded-full mb-6 sm:mb-8'>
 							<span className='text-yellow-300'>
 								<Image
@@ -355,10 +355,11 @@ export default function Home() {
 					<div className='grid md:grid-cols-3 gap-6 lg:gap-8'>
 						<div className='bg-[#796B83] rounded-2xl p-6 text-white'>
 							<p className='text-sm leading-relaxed mb-6'>
-								"I struggled with traditional study methods
-								until I discovered this app. The flashcards and
-								spaced repetition techniques were game changers
-								for me. I passed the NEET-PG on my first try!"
+								&ldquo;I struggled with traditional study
+								methods until I discovered this app. The
+								flashcards and spaced repetition techniques were
+								game changers for me. I passed the NEET-PG on my
+								first try!&rdquo;
 							</p>
 							<div className='flex items-center gap-3'>
 								<div className='w-12 h-12 bg-gray-300 rounded-full overflow-hidden'>
@@ -383,11 +384,11 @@ export default function Home() {
 
 						<div className='bg-[#796B83] rounded-2xl p-6 text-white'>
 							<p className='text-sm leading-relaxed mb-6'>
-								"This app made studying for the NEET-PG so much
-								easier. The focused review, materials and
+								&ldquo;This app made studying for the NEET-PG so
+								much easier. The focused review, materials and
 								performance tracking helped me stay organized
 								and confident. Highly recommend it to all
-								nursing students!"
+								nursing students!&rdquo;
 							</p>
 							<div className='flex items-center gap-3'>
 								<div className='w-12 h-12 bg-gray-300 rounded-full overflow-hidden'>
@@ -412,11 +413,11 @@ export default function Home() {
 
 						<div className='bg-[#796B83] rounded-2xl p-6 text-white'>
 							<p className='text-sm leading-relaxed mb-6'>
-								"The flashcards were incredibly effective for my
-								NEET-PG prep. I especially loved the spaced
-								format that made it easy to study on the go, and
-								the active recall really helped with retention.
-								Great study tool overall!"
+								&ldquo;The flashcards were incredibly effective
+								for my NEET-PG prep. I especially loved the
+								spaced format that made it easy to study on the
+								go, and the active recall really helped with
+								retention. Great study tool overall!&rdquo;
 							</p>
 							<div className='flex items-center gap-3'>
 								<div className='w-12 h-12 bg-gray-300 rounded-full overflow-hidden'>

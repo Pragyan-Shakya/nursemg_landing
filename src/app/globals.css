@@ -1,21 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
+/* Neue Regrade Font - Using actual font files */
+@font-face {
+	font-family: 'Neue Regrade';
+	src: url('/fonts/Neue-Regrade-Light-BF65af35d81e682.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Regrade';
+	src: url('/fonts/Neue-Regrade-Regular-BF65af35d81f2ff.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Regrade';
+	src: url('/fonts/Neue-Regrade-Medium-BF65af35d843ed6.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Regrade';
+	src: url('/fonts/Neue-Regrade-Semibold-BF65af35d8354a8.otf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Regrade';
+	src: url('/fonts/Neue-Regrade-Bold-BF65af35d84e111.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Regrade';
+	src: url('/fonts/Neue-Regrade-Bold-Italic-BF65af35d85dafb.otf') format('opentype');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Regrade';
+	src: url('/fonts/Neue-Regrade-SemiBold-Italic-BF65af35d6f02e9.otf') format('opentype');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Regrade';
+	src: url('/fonts/Neue-Regrade-ExtraBold-Italic-BF65af35d8315f8.otf') format('opentype');
+	font-weight: 800;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* Variable font - provides full weight and style range */
+@font-face {
+	font-family: 'Neue Regrade Variable';
+	src: url('/fonts/Neue-Regrade-Variable-BF65af35d87b6a7.ttf') format('truetype');
+	font-weight: 200 900;
+	font-style: normal;
+	font-display: swap;
+}
+
 @import 'tailwindcss';
 
 @theme inline {
-	--font-sans: var(--font-geist-sans);
+	--font-sans: 'Neue Regrade', sans-serif;
 	--font-mono: var(--font-geist-mono);
-	--font-inter: 'Inter', var(--font-sans);
-	--font-instrument: 'Instrument Sans', var(--font-sans);
+	--font-inter: 'Neue Regrade', 'Inter', sans-serif;
+	--font-instrument: 'Neue Regrade', 'Instrument Sans', sans-serif;
+	--font-neue-regrade: 'Neue Regrade', sans-serif;
 
 	/* Custom purple color for Neuroflip brand */
 	--color-purple-primary: #644a73;
 	--color-purple-dark: #493257;
-	--color-orange-primary: #FFB895;
-	--color-orange-200: #FFD6B9;
-	--color-orange-100: #FFD6C3;
+	--color-orange-primary: #ffb895;
+	--color-orange-200: #ffd6b9;
+	--color-orange-100: #ffd6c3;
 	--color-gray-100: rgba(55, 71, 60, 0.2);
 }
 
 body {
-	font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+	font-family: 'Neue Regrade', sans-serif;
+}
+
+/* Apply Neue Regrade as main font to all text elements */
+* {
+	font-family: 'Neue Regrade', sans-serif;
 }

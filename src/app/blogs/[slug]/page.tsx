@@ -40,14 +40,18 @@ export default function BlogDetailPage({ params }: BlogPageProps) {
 	useEffect(() => {
 		const fetchBlog = async () => {
 			try {
-				const response = await fetch(`https://011403120524.neetcrack.com/api/blogs/${resolvedParams.slug}`);
+				const response = await fetch(
+					`https://011403120524.neetcrack.com/api/blogs/${resolvedParams.slug}`,
+				);
 				if (!response.ok) {
 					throw new Error('Failed to fetch blog');
 				}
 				const response_data = await response.json();
 				setBlog(response_data.data);
 			} catch (err) {
-				setError(err instanceof Error ? err.message : 'An error occurred');
+				setError(
+					err instanceof Error ? err.message : 'An error occurred',
+				);
 			} finally {
 				setLoading(false);
 			}
@@ -67,144 +71,151 @@ export default function BlogDetailPage({ params }: BlogPageProps) {
 	if (error || !blog) {
 		return (
 			<div className='min-h-screen bg-white flex items-center justify-center'>
-				<div className='text-red-600'>Error: {error || 'Blog not found'}</div>
+				<div className='text-red-600'>
+					Error: {error || 'Blog not found'}
+				</div>
 			</div>
 		);
 	}
 
 	return (
 		<div className='min-h-screen bg-white'>
-			{/* Header */}
-			<header className='bg-purple-primary'>
-				<div className='max-w-7xl mx-auto px-20 py-4'>
-					<div className='flex justify-between items-center'>
-						<div className='flex items-center gap-2'>
-							<Link href='/'>
-								<Image
-									src='/assets/logo.svg'
-									alt='NCLEX Logo'
-									width={106}
-									height={24}
-								/>
-							</Link>
-						</div>
-
-						<nav className='hidden md:flex items-center gap-8'>
-							<Link
-								href='/blogs'
-								className='text-white hover:text-orange-300 transition-colors font-medium text-[15px]'>
-								Blogs
-							</Link>
-							<a
-								href='#'
-								className='text-white hover:text-orange-300 transition-colors font-medium text-[15px]'>
-								FAQs
-							</a>
-							<button className='flex items-center gap-2 bg-transparent text-white px-6 py-3 rounded-full border border-white font-medium hover:bg-white hover:text-gray-900 transition-colors text-[15px]'>
-								Get started
-								<svg
-									className='w-4 h-4'
-									fill='none'
-									stroke='currentColor'
-									viewBox='0 0 24 24'>
-									<path
-										strokeLinecap='round'
-										strokeLinejoin='round'
-										strokeWidth={1.33}
-										d='M9 5l7 7-7 7'
+			<div className='min-h-screen'>
+				<header className='bg-purple-primary'>
+					<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-4'>
+						<div className='flex justify-between items-center'>
+							<div className='flex items-center gap-2'>
+								<Link href='/'>
+									<Image
+										src='/assets/logo.svg'
+										alt='NCLEX Logo'
+										width={106}
+										height={24}
+										className='cursor-pointer'
 									/>
-								</svg>
-							</button>
-						</nav>
-					</div>
-				</div>
+								</Link>
+							</div>
 
-				<div className='w-full h-px bg-gradient-to-r from-transparent via-orange-200 to-transparent opacity-50'></div>
-			</header>
-
-			{/* Breadcrumb */}
-			<section className='bg-white py-8'>
-				<div className='max-w-4xl mx-auto px-8'>
-					<nav className='flex items-center gap-2 text-sm text-gray-600'>
-						<Link href='/' className='hover:text-purple-primary'>
-							Home
-						</Link>
-						<span>/</span>
-						<Link href='/blogs' className='hover:text-purple-primary'>
-							Blogs
-						</Link>
-						<span>/</span>
-						<span className='text-gray-900'>{blog.title}</span>
-					</nav>
-				</div>
-			</section>
-
-			{/* Blog Content */}
-			<main className='bg-white'>
-				<article className='max-w-4xl mx-auto px-8 py-8'>
-					{/* Blog Header */}
-					<header className='mb-8'>
-						<div className='flex items-center gap-4 mb-6'>
-							<span className='bg-purple-primary/10 text-purple-primary px-3 py-1 rounded-full text-sm font-medium'>
-								{blog.category}
-							</span>
-							<span className='text-gray-500 text-sm'>
-								{blog.reading_time}
-							</span>
+							<nav className='flex items-center gap-4 sm:gap-8'>
+								<Link
+									href='/blogs'
+									className='text-white hover:text-orange-300 transition-colors font-medium text-sm sm:text-[15px]'>
+									Blogs
+								</Link>
+								<Link
+									href='/#faq'
+									className='text-white hover:text-orange-300 transition-colors font-medium text-sm sm:text-[15px]'>
+									FAQs
+								</Link>
+								<button className='flex items-center gap-2 bg-transparent text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-white font-medium hover:bg-white hover:text-gray-900 transition-colors text-sm sm:text-[15px]'>
+									Get started
+									<svg
+										className='w-4 h-4'
+										fill='none'
+										stroke='currentColor'
+										viewBox='0 0 24 24'>
+										<path
+											strokeLinecap='round'
+											strokeLinejoin='round'
+											strokeWidth={1.33}
+											d='M9 5l7 7-7 7'
+										/>
+									</svg>
+								</button>
+							</nav>
 						</div>
+					</div>
 
-						<h1 className='text-4xl font-bold text-gray-900 mb-6 font-instrument leading-tight'>
-							{blog.title}
-						</h1>
+					<Image
+						title='Hero Image'
+						src='/assets/border.svg'
+						alt='Hero Image'
+						width={1920}
+						height={1080}
+					/>
+				</header>
 
-						<div className='flex items-center gap-4 mb-8'>
-							<div className='flex items-center gap-3'>
-								<div className='w-10 h-10 bg-purple-primary rounded-full flex items-center justify-center'>
-									<span className='text-white font-medium'>
-										{blog.published_by?.[0]?.toUpperCase() || 'A'}
-									</span>
+				<main className=''>
+					<article className='bg-purple-primary'>
+						<header className='  max-w-5xl mx-auto  px-8 py-8'>
+							<h1 className='text-5xl font-semibold text-center text-white mb-6 font-instrument leading-tight'>
+								{blog.title}
+							</h1>
+
+							<div className='flex items-center justify-center text-gray-300 gap-10 mb-8'>
+								<div className='flex items-center gap-2'>
+									<svg
+										xmlns='http://www.w3.org/2000/svg'
+										width='20'
+										height='20'
+										fill='currentColor'
+										className='bi bi-person'
+										viewBox='0 0 16 16'>
+										<path d='M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z' />
+									</svg>
+									{blog.published_by}
 								</div>
-								<div>
-									<p className='text-gray-900 font-medium'>
-										{blog.published_by}
-									</p>
-									<p className='text-gray-500 text-sm'>
-										{blog.published_at}
-									</p>
+								<div className='flex items-center gap-2'>
+									<svg
+										xmlns='http://www.w3.org/2000/svg'
+										width='20'
+										height='20'
+										fill='currentColor'
+										className='bi bi-calendar2'
+										viewBox='0 0 16 16'>
+										<path d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z' />
+										<path d='M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z' />
+									</svg>
+									{blog.published_at}
+								</div>
+								<div className='flex items-center gap-2'>
+									<svg
+										xmlns='http://www.w3.org/2000/svg'
+										width='20'
+										height='20'
+										fill='currentColor'
+										className='bi bi-clock'
+										viewBox='0 0 16 16'>
+										<path d='M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z' />
+										<path d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0' />
+									</svg>
+									{blog.reading_time}
 								</div>
 							</div>
-							{blog.view_count && (
-								<div className='ml-auto text-gray-500 text-sm'>
-									{blog.view_count} views
+						</header>
+					</article>
+					<article className='bg-gradient-to-b from-purple-primary from-50% to-white to-50%'>
+						<div className='max-w-5xl mx-auto px-8 py-8   p-6 sm:p-8'>
+							{blog.blog_image && (
+								<div className='relative h-[600px] rounded-2xl overflow-hidden mb-8'>
+									<Image
+										src={blog.blog_image}
+										alt={blog.title}
+										fill
+										className='object-cover'
+									/>
 								</div>
 							)}
 						</div>
-
-						{/* Featured Image */}
-						{blog.blog_image && (
-							<div className='relative h-[400px] rounded-2xl overflow-hidden mb-8'>
-								<Image
-									src={blog.blog_image}
-									alt={blog.title}
-									fill
-									className='object-cover'
-								/>
-							</div>
-						)}
-					</header>
-
-					{/* Blog Content */}
+					</article>
+				</main>
+			</div>
+			<section className='bg-white'>
+				<article className='max-w-4xl mx-auto px-8 py-8'>
 					<div className='prose prose-lg max-w-none'>
-						<div 
+						<div
 							className='text-gray-900 leading-relaxed font-inter'
-							dangerouslySetInnerHTML={{ __html: blog.description }}
+							dangerouslySetInnerHTML={{
+								__html: blog.description,
+							}}
 						/>
 					</div>
 
-					{/* Tags */}
 					{blog.tags && blog.tags.length > 0 && (
 						<div className='mt-12 pt-8 border-t border-gray-200'>
-							<h3 className='text-lg font-medium text-gray-900 mb-4'>Tags</h3>
+							<h3 className='text-lg font-medium text-gray-900 mb-4'>
+								Tags
+							</h3>
 							<div className='flex flex-wrap gap-2'>
 								{blog.tags.map((tag, index) => (
 									<span
@@ -217,7 +228,6 @@ export default function BlogDetailPage({ params }: BlogPageProps) {
 						</div>
 					)}
 
-					{/* Back to Blog */}
 					<div className='mt-12 pt-8 border-t border-gray-200'>
 						<Link
 							href='/blogs'
@@ -238,8 +248,7 @@ export default function BlogDetailPage({ params }: BlogPageProps) {
 						</Link>
 					</div>
 				</article>
-			</main>
-
+			</section>
 			{/* Footer */}
 			<Footer />
 		</div>

@@ -5,13 +5,11 @@ export default function Footer() {
 		<section className='bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6'>
 			<div className='max-w-7xl mx-auto'>
 				<footer className='bg-purple-dark rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden'>
-					{/* Top Section - Purple Primary */}
 					<div className='py-12 sm:py-16 px-6 sm:px-12 text-center'>
 						<h2 className='text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-6 sm:mb-8'>
 							Helped Improve scores of 25,000 aspirants already.
 						</h2>
 
-						{/* Download Buttons */}
 						<div className='flex flex-col sm:flex-row gap-4 justify-center mb-6'>
 							<button className='bg-white text-black px-6 sm:px-10 py-2 rounded-full font-semibold flex items-center gap-3 justify-center'>
 								<svg
@@ -59,7 +57,7 @@ export default function Footer() {
 						</div>
 
 						<p className='text-purple-200 text-base sm:text-lg'>
-							Don't be left behind
+							Don&apos;t be left behind
 						</p>
 					</div>
 
@@ -101,7 +99,6 @@ export default function Footer() {
 								</ul>
 							</div>
 
-							{/* Mobile App Image */}
 							<div className='flex justify-center'>
 								<Image
 									src='/assets/hand-phone.svg'
@@ -112,7 +109,6 @@ export default function Footer() {
 								/>
 							</div>
 
-							{/* Contact & Follow */}
 							<div>
 								<h3 className='text-lg sm:text-xl font-semibold text-white mb-4 sm:mb-6'>
 									CONTACT US
