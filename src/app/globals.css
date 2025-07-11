@@ -77,10 +77,10 @@
 @import 'tailwindcss';
 
 @theme inline {
-	--font-sans: 'Neue Regrade', sans-serif;
+	--font-sans: 'Inter', sans-serif;
 	--font-mono: var(--font-geist-mono);
-	--font-inter: 'Neue Regrade', 'Inter', sans-serif;
-	--font-instrument: 'Neue Regrade', 'Instrument Sans', sans-serif;
+	--font-inter: 'Inter', sans-serif;
+	--font-instrument: 'Instrument Sans', sans-serif;
 	--font-neue-regrade: 'Neue Regrade', sans-serif;
 
 	/* Custom purple color for Neuroflip brand */
@@ -93,10 +93,15 @@
 }
 
 body {
-	font-family: 'Neue Regrade', sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 
-/* Apply Neue Regrade as main font to all text elements */
+/* Apply Inter as main font to all text elements */
 * {
+	font-family: 'Inter', sans-serif;
+}
+
+/* Apply Neue Regrade font to heading tags only */
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Neue Regrade', sans-serif;
 }
