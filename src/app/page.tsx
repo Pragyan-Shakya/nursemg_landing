@@ -172,20 +172,20 @@ export default function Home() {
 									alt='Pattern'
 									width={300}
 									height={300}
-									className='w-[150px] h-[150px] md:w-[250px] md:h-[250px] lg:w-[50rem] lg:h-[613px]'
+									className='w-[150px] h-[150px] md:w-[250px] md:h-[250px] lg:w-[50rem] lg:h-[700px]'
 								/>
 							</div>
 						</div>
 
 						{/* Right Pattern */}
 						<div className='absolute top-0 right-0 w-full h-full pointer-events-none z-0 overflow-hidden'>
-							<div className='absolute -top-5 -right-5 md:-top-10 md:-right-10 lg:top-10 lg:-right-50'>
+							<div className='absolute -top-5 -right-5 md:-top-10 md:-right-10 lg:top-5 lg:-right-50'>
 								<Image
 									src='/assets/Patterns-1.svg'
 									alt='Pattern'
 									width={300}
 									height={300}
-									className='w-[150px] h-[150px] md:w-[250px] md:h-[250px] lg:w-[50rem] lg:h-[613px]'
+									className='w-[150px] h-[150px] md:w-[250px] md:h-[250px] lg:w-[50rem] lg:h-[700px]'
 								/>
 							</div>
 						</div>
