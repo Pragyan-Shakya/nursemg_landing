@@ -1,9 +1,6 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
-import { useState, useEffect } from 'react';
 
 interface Blog {
 	id: number;
@@ -25,52 +22,30 @@ interface Blog {
 	tags: string[];
 }
 
-export default function BlogPage() {
-	const [blogs, setBlogs] = useState<Blog[]>([]);
-	const [loading, setLoading] = useState(true);
-	const [error, setError] = useState<string | null>(null);
-
-	useEffect(() => {
-		const fetchBlogs = async () => {
-			try {
-				const response = await fetch(
-					'https://011403120524.neetcrack.com/api/blogs',
-				);
-				if (!response.ok) {
-					throw new Error('Failed to fetch blogs');
-				}
-				const data = await response.json();
-				setBlogs(data.data || []);
-			} catch (err) {
-				setError(
-					err instanceof Error ? err.message : 'An error occurred',
-				);
-			} finally {
-				setLoading(false);
+async function fetchBlogs(): Promise<Blog[]> {
+	try {
+		const response = await fetch(
+			'https://011403120524.neetcrack.com/api/blogs',
+			{
+				cache: 'no-store' // This ensures fresh data on each request
 			}
-		};
+		);
+		if (!response.ok) {
+			throw new Error('Failed to fetch blogs');
+		}
+		const data = await response.json();
+		return data.data || [];
+	} catch (err) {
+		console.error('Error fetching blogs:', err);
+		return [];
+	}
+}
 
-		fetchBlogs();
-	}, []);
-
+export default async function BlogPage() {
+	const blogs = await fetchBlogs();
 	const featuredBlog = blogs.length > 0 ? blogs[0] : null;
 	const regularBlogs = blogs.length > 1 ? blogs.slice(1) : [];
 
-	if (loading) {
-		return (
-			<div className='min-h-screen bg-white flex items-center justify-center'>
-				<div className='text-gray-600'>Loading blogs...</div>
-			</div>
-		);
-	}
-
-	if (error) {
-		return (
-			<div className='min-h-screen bg-white flex items-center justify-center'>
-				<div className='text-red-600'>Error: {error}</div>
-			</div>
-		);
-	}
 	return (
 		<div className='min-h-screen bg-purple-primary'>
 			{/* Header */}
