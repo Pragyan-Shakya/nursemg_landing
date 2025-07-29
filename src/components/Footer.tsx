@@ -61,9 +61,9 @@ export default function Footer() {
 						</p>
 					</div>
 
-					<div className='bg-purple-primary pt-12 sm:pt-16 px-6 sm:px-12 rounded-t-4xl sm:rounded-t-none'>
+					<div className='bg-purple-primary pt-12 sm:pt-16 px-6 sm:px-12 rounded-t-4xl'>
 						{/* Mobile: Quick Links and Contact Us side by side */}
-						<div className='grid grid-cols-2 sm:hidden gap-6 mb-8'>
+						<div className='grid grid-cols-2 sm:hidden gap-6 mb-8 p-'>
 							<div>
 								<h3 className='text-lg font-semibold text-white mb-4'>
 									QUICK LINKS
@@ -107,7 +107,7 @@ export default function Footer() {
 								<p className='text-purple-200 mb-6 text-sm'>
 									Contact@nclex.com
 								</p>
-								
+
 								<h3 className='text-lg font-semibold text-white mb-4'>
 									FOLLOW US
 								</h3>
