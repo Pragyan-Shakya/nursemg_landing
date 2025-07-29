@@ -24,11 +24,11 @@ export default function Institutional() {
 					</h2>
 
 					<p className='text-purple-200 text-lg mb-8 leading-relaxed max-w-lg'>
-						We partner with academic programs to offer bulk
-						pricing on our suite of nursing exam prep solutions.
-						Collaborate with us to customize a package that fits
-						your students' needs and aligns with your
-						institution's goals.
+						We partner with academic programs to offer bulk pricing
+						on our suite of nursing exam prep solutions. Collaborate
+						with us to customize a package that fits your
+						students&apos; needs and aligns with your institution&apos;s
+						goals.
 					</p>
 
 					<button className='inline-flex items-center gap-2 border border-white/30 text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition-colors'>

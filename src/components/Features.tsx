@@ -9,9 +9,8 @@ export default function Features() {
 						Achieve NCLEX success with NurseMG!
 					</h2>
 					<p className='text-gray-600 text-lg max-w-3xl mx-auto'>
-						nursemg helps aspirants retain what they study so
-						that they are more prepared than ever to crack Nclex
-						exams.
+						nursemg helps aspirants retain what they study so that
+						they are more prepared than ever to crack Nclex exams.
 					</p>
 				</div>
 
@@ -50,8 +49,7 @@ export default function Features() {
 							<p className='text-gray-600 leading-relaxed text-sm'>
 								Master key exam topics that are frequently
 								tested, condensed into easy-to-digest,
-								bite-sized flashcards for effective
-								learning.
+								bite-sized flashcards for effective learning.
 							</p>
 						</div>
 					</div>
@@ -77,10 +75,10 @@ export default function Features() {
 								Performance analysis
 							</h4>
 							<p className='text-gray-600 leading-relaxed text-sm'>
-								Track your progress and performance
-								effortlessly with our app's built-in
-								analytics, ensuring you stay on top of your
-								study goals and excel in the NCLEX exam.
+								Track your progress and performance effortlessly
+								with our app&apos;s built-in analytics, ensuring
+								you stay on top of your study goals and excel in
+								the NCLEX exam.
 							</p>
 						</div>
 
@@ -98,8 +96,7 @@ export default function Features() {
 							<p className='text-gray-600 leading-relaxed text-sm'>
 								Master key exam topics that are frequently
 								tested, condensed into easy-to-digest,
-								bite-sized flashcards for effective
-								learning.
+								bite-sized flashcards for effective learning.
 							</p>
 						</div>
 					</div>
