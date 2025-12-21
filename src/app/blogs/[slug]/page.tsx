@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import { useState, useEffect, use } from 'react';
+import Header from '@/components/Header';
 
 interface Blog {
 	id: number;
@@ -81,64 +82,12 @@ export default function BlogDetailPage({ params }: BlogPageProps) {
 	return (
 		<div className='min-h-screen bg-white'>
 			<div className='min-h-screen'>
-				<header className='bg-purple-primary'>
-					<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-4'>
-						<div className='flex justify-between items-center'>
-							<div className='flex items-center gap-2'>
-								<Link href='/'>
-									<Image
-										src='/assets/logo.svg'
-										alt='NCLEX Logo'
-										width={106}
-										height={24}
-										className='cursor-pointer'
-									/>
-								</Link>
-							</div>
-
-							<nav className='flex items-center gap-4 sm:gap-8'>
-								<Link
-									href='/blogs'
-									className='text-white hover:text-orange-300 transition-colors font-medium text-sm sm:text-[15px]'>
-									Blogs
-								</Link>
-								<Link
-									href='/#faq'
-									className='text-white hover:text-orange-300 transition-colors font-medium text-sm sm:text-[15px]'>
-									FAQs
-								</Link>
-								<button className='flex items-center gap-2 bg-transparent text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-white font-medium hover:bg-white hover:text-gray-900 transition-colors text-sm sm:text-[15px]'>
-									Get started
-									<svg
-										className='w-4 h-4'
-										fill='none'
-										stroke='currentColor'
-										viewBox='0 0 24 24'>
-										<path
-											strokeLinecap='round'
-											strokeLinejoin='round'
-											strokeWidth={1.33}
-											d='M9 5l7 7-7 7'
-										/>
-									</svg>
-								</button>
-							</nav>
-						</div>
-					</div>
-
-					<Image
-						title='Hero Image'
-						src='/assets/border.svg'
-						alt='Hero Image'
-						width={1920}
-						height={1080}
-					/>
-				</header>
+				<Header/>
 
 				<main className=''>
 					<article className='bg-purple-primary'>
 						<header className='  max-w-5xl mx-auto  px-8 py-8'>
-							<h1 className='text-5xl font-semibold text-center text-white mb-6 font-instrument leading-tight'>
+							<h1 className='text-2xl md:text-5xl font-semibold text-center text-white mb-6 font-instrument leading-tight'>
 								{blog.title}
 							</h1>
 
@@ -185,9 +134,9 @@ export default function BlogDetailPage({ params }: BlogPageProps) {
 						</header>
 					</article>
 					<article className='bg-gradient-to-b from-purple-primary from-50% to-white to-50%'>
-						<div className='max-w-5xl mx-auto px-8 py-8   p-6 sm:p-8'>
+						<div className='max-w-5xl mx-auto px-4 py-4 md:p-8'>
 							{blog.blog_image && (
-								<div className='relative h-[600px] rounded-2xl overflow-hidden mb-8'>
+								<div className='relative h-[270px] md:h-[520px] rounded-2xl overflow-hidden mb-8'>
 									<Image
 										src={blog.blog_image}
 										alt={blog.title}
@@ -201,7 +150,7 @@ export default function BlogDetailPage({ params }: BlogPageProps) {
 				</main>
 			</div>
 			<section className='bg-white'>
-				<article className='max-w-4xl mx-auto px-8 py-8'>
+				<article className='max-w-4xl mx-auto px-8 py-4'>
 					<div className='prose prose-lg max-w-none'>
 						<div
 							className='text-gray-900 leading-relaxed font-inter'

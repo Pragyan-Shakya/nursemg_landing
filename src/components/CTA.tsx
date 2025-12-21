@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function CTA() {
 	return (
@@ -22,7 +23,7 @@ export default function CTA() {
 
 							{/* App Store Buttons */}
 							<div className='flex flex-col sm:flex-row gap-4'>
-								<button className=' text-black px-8 py-3 border-1 border-black rounded-full font-semibold flex items-center gap-3 '>
+								<Link href='https://play.google.com/store/apps/details?id=com.neuroflip.nclex100' target='_blank' rel='noopener noreferrer' className=' text-black px-8 py-3 border-1 border-black rounded-full font-semibold flex items-center gap-3 '>
 									<svg
 										className='w-8 h-8'
 										viewBox='0 0 24 24'
@@ -41,9 +42,9 @@ export default function CTA() {
 												height={40}></Image>
 										</div>
 									</div>
-								</button>
+								</Link>
 
-								<button className=' text-black px-8 py-3 border-1 border-black rounded-full font-semibold flex items-center gap-3 '>
+								<Link href='https://apps.apple.com/us/app/nclex-flashcards/id1592043274' target='_blank' rel='noopener noreferrer' className=' text-black px-8 py-3 border-1 border-black rounded-full font-semibold flex items-center gap-3 '>
 									<svg
 										className='w-8 h-8 '
 										viewBox='0 0 24 24'
@@ -62,7 +63,7 @@ export default function CTA() {
 												height={40}></Image>
 										</div>
 									</div>
-								</button>
+								</Link>
 							</div>
 						</div>
 

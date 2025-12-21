@@ -4,13 +4,13 @@ export default function Institutional() {
 	return (
 		<section className='bg-purple-primary py-30 px-6 relative overflow-hidden'>
 			<div className='absolute top-0 right-0 w-full h-full pointer-events-none z-0 overflow-hidden'>
-				<div className='absolute top-10 -right-80 md:-top-10 md:-right-10 lg:top-10 lg:-right-50'>
+				<div className='absolute top-10 -right-80 md:top-10 md:-right-5 lg:top-10 lg:-right-70'>
 					<Image
 						src='/assets/Patterns-1.svg'
 						alt='Pattern'
 						width={300}
 						height={300}
-						className='w-[400px] h-[650px] md:w-[250px] md:h-[250px] lg:w-[50rem] lg:h-[550px]'
+						className='w-[400px] h-[650px] md:w-[300px] md:h-[750px] lg:w-[60rem] lg:h-[650px]'
 					/>
 				</div>
 			</div>

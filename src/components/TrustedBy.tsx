@@ -27,7 +27,7 @@ export default function TrustedBy() {
 				</div>
 
 				<div className='absolute top-40 right-0 flex gap-4'>
-					<button className='w-12 h-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white/10 transition-colors'>
+					{/* <button className='w-12 h-12 rounded-full border border-white/30 flex items-center justify-center text-white hover:bg-white/10 transition-colors'>
 						<svg
 							className='w-5 h-5'
 							fill='none'
@@ -54,7 +54,7 @@ export default function TrustedBy() {
 								d='M9 5l7 7-7 7'
 							/>
 						</svg>
-					</button>
+					</button> */}
 				</div>
 
 				<div className='grid md:grid-cols-3 gap-6 lg:gap-8'>
@@ -68,7 +68,7 @@ export default function TrustedBy() {
 						<div className='flex items-center gap-3'>
 							<div className='w-12 h-12 bg-gray-300 rounded-full overflow-hidden'>
 								<Image
-									src='/assets/student1.jpg'
+									src='/assets/sarah.jpg'
 									alt='Sarah M., RN'
 									width={48}
 									height={48}
@@ -93,7 +93,7 @@ export default function TrustedBy() {
 						<div className='flex items-center gap-3'>
 							<div className='w-12 h-12 bg-gray-300 rounded-full overflow-hidden'>
 								<Image
-									src='/assets/student1.jpg'
+									src='/assets/sarah.jpg'
 									alt='Sarah M., RN'
 									width={48}
 									height={48}
@@ -118,7 +118,7 @@ export default function TrustedBy() {
 						<div className='flex items-center gap-3'>
 							<div className='w-12 h-12 bg-gray-300 rounded-full overflow-hidden'>
 								<Image
-									src='/assets/student1.jpg'
+									src='/assets/sarah.jpg'
 									alt='Sarah M., RN'
 									width={48}
 									height={48}

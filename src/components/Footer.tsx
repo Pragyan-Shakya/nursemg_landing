@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
 	return (
@@ -11,7 +12,7 @@ export default function Footer() {
 						</h2>
 
 						<div className='flex flex-col sm:flex-row gap-4 justify-center mb-6'>
-							<button className='bg-white text-black px-6 sm:px-10 py-2 rounded-full font-semibold flex items-center gap-3 justify-center'>
+							<Link href='https://play.google.com/store/apps/details?id=com.neuroflip.nclex100' target='_blank' rel='noopener noreferrer' className='bg-white text-black px-6 sm:px-10 py-2 rounded-full font-semibold flex items-center gap-3 justify-center'>
 								<svg
 									className='w-10 h-10'
 									viewBox='0 0 24 24'
@@ -31,9 +32,9 @@ export default function Footer() {
 										/>
 									</div>
 								</div>
-							</button>
+							</Link>
 
-							<button className='bg-white text-black px-6 sm:px-10 py-2 rounded-full font-semibold flex items-center gap-3 justify-center'>
+							<Link href='https://apps.apple.com/us/app/nclex-flashcards/id1592043274' target='_blank' rel='noopener noreferrer' className='bg-white text-black px-6 sm:px-10 py-2 rounded-full font-semibold flex items-center gap-3 justify-center'>
 								<svg
 									className='w-10 h-10'
 									viewBox='0 0 24 24'
@@ -53,7 +54,7 @@ export default function Footer() {
 										/>
 									</div>
 								</div>
-							</button>
+							</Link>
 						</div>
 
 						<p className='text-purple-200 text-base sm:text-lg'>
@@ -70,42 +71,38 @@ export default function Footer() {
 								</h3>
 								<ul className='space-y-2'>
 									<li>
-										<a
-											href='#'
+										<Link 
+											href='/blogs'
 											className='text-purple-200 hover:text-white transition-colors text-sm'>
-											Learn
-										</a>
+											Blogs
+										</Link>
 									</li>
 									<li>
-										<a
-											href='#'
+										<Link
+											href='/privacy-policy'
 											className='text-purple-200 hover:text-white transition-colors text-sm'>
-											Support
-										</a>
+											Privacy Policy
+										</Link>
 									</li>
 									<li>
-										<a
-											href='#'
+										<Link
+											href='/terms-of-use'
 											className='text-purple-200 hover:text-white transition-colors text-sm'>
-											Security
-										</a>
+											Terms of use
+										</Link>
 									</li>
-									<li>
-										<a
-											href='#'
-											className='text-purple-200 hover:text-white transition-colors text-sm'>
-											Legal & disclosures
-										</a>
-									</li>
+									
 								</ul>
+
+								<p className='text-purple-200 text-sm mt-4'>© 2025 Neuroflip, LLC</p>
 							</div>
 
 							<div>
 								<h3 className='text-lg font-semibold text-white mb-4'>
 									CONTACT US
 								</h3>
-								<p className='text-purple-200 mb-6 text-sm'>
-									Contact@nclex.com
+								<p className='text-purple-200 mb-6 text-sm'>									
+									Refund Policy
 								</p>
 
 								<h3 className='text-lg font-semibold text-white mb-4'>
@@ -165,34 +162,28 @@ export default function Footer() {
 								</h3>
 								<ul className='space-y-2 sm:space-y-3'>
 									<li>
-										<a
-											href='#'
+										<Link
+											href='/blogs'
 											className='text-purple-200 hover:text-white transition-colors text-sm sm:text-base'>
-											Learn
-										</a>
+											Blogs
+										</Link>
 									</li>
 									<li>
-										<a
-											href='#'
+										<Link
+											href='/privacy-policy'
 											className='text-purple-200 hover:text-white transition-colors text-sm sm:text-base'>
-											Support
-										</a>
+											Privacy Policy
+										</Link>
 									</li>
 									<li>
-										<a
-											href='#'
+										<Link
+											href='/terms-of-use'
 											className='text-purple-200 hover:text-white transition-colors text-sm sm:text-base'>
-											Security
-										</a>
-									</li>
-									<li>
-										<a
-											href='#'
-											className='text-purple-200 hover:text-white transition-colors text-sm sm:text-base'>
-											Legal & disclosures
-										</a>
+											Terms of use
+										</Link>
 									</li>
 								</ul>
+								<p className='text-purple-200 text-sm mt-4'>© 2025 Neuroflip, LLC</p>
 							</div>
 
 							<div className='flex justify-center'>
@@ -206,11 +197,11 @@ export default function Footer() {
 							</div>
 
 							<div>
-								<h3 className='text-lg sm:text-xl font-semibold text-white mb-4 sm:mb-6'>
+								<h3 className='text-lg sm:text-xl font-semibold text-white '>
 									CONTACT US
 								</h3>
 								<p className='text-purple-200 mb-8'>
-									Contact@nclex.com
+									<Link href='mailto:info@nursemg.com'>info@nursemg.com</Link>
 								</p>
 
 								<h3 className='text-lg sm:text-xl font-semibold text-white mb-4 sm:mb-6'>

@@ -12,41 +12,10 @@ import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 
 export default function Home() {
-	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-	const toggleSidebar = () => {
-		setIsSidebarOpen(!isSidebarOpen);
-	};
-
-	// Handle keyboard events and body scroll
-	useEffect(() => {
-		const handleKeyDown = (event: KeyboardEvent) => {
-			if (event.key === 'Escape' && isSidebarOpen) {
-				setIsSidebarOpen(false);
-			}
-		};
-
-		const handleBodyScroll = () => {
-			if (isSidebarOpen) {
-				document.body.style.overflow = 'hidden';
-			} else {
-				document.body.style.overflow = 'unset';
-			}
-		};
-
-		document.addEventListener('keydown', handleKeyDown);
-		handleBodyScroll();
-
-		return () => {
-			document.removeEventListener('keydown', handleKeyDown);
-			document.body.style.overflow = 'unset';
-		};
-	}, [isSidebarOpen]);
-
 	return (
 		<div>
 			{/* Hero Section */}
-			<Hero isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+			<Hero />
 
 			{/* Features Section */}
 			<Features />
