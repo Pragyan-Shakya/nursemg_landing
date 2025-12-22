@@ -40,7 +40,7 @@ const testimonialData: TestimonialItem[] = [
 ];
 
 export default function Testimonials() {
-	const renderStars = (rating: number) => {
+	const renderStars = () => {
 		return (
 			<div className='flex gap-1'>
 				{[...Array(5)].map((_, i) => (
@@ -74,7 +74,7 @@ export default function Testimonials() {
 							</div>
 
 							<div className='mb-4'>
-								{renderStars(testimonial.rating)}
+								{renderStars()}
 							</div>
 
 							<h4 className='font-light text-white mb-3 !font-sans'>
