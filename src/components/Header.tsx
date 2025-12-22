@@ -39,7 +39,7 @@ export default function Header() {
 								className='text-white hover:text-orange-300 transition-colors font-medium text-sm sm:text-[15px]'>
 								FAQs
 							</Link>
-							<button className='flex items-center gap-2 bg-transparent text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-white font-medium hover:bg-white hover:text-gray-900 transition-colors text-sm sm:text-[15px]'>
+							<Link href="https://onelink.to/mj2p8q" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2 bg-transparent text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-white font-medium hover:bg-white hover:text-gray-900 transition-colors text-sm sm:text-[15px]'>
 								Get started
 								<svg
 									className='w-4 h-4'
@@ -53,7 +53,7 @@ export default function Header() {
 										d='M9 5l7 7-7 7'
 									/>
 								</svg>
-							</button>
+							</Link>
 						</nav>
 
 						{/* Mobile Menu Button */}
@@ -152,7 +152,7 @@ export default function Header() {
 								onClick={toggleSidebar}>
 								FAQs
 							</a>
-							<button
+							<Link href="https://onelink.to/mj2p8q" target="_blank" rel="noopener noreferrer"
 								className='w-full flex items-center justify-center gap-2 bg-transparent text-white px-6 py-3 rounded-full border border-white font-medium hover:bg-white hover:text-purple-primary hover:scale-105 transition-all duration-200 text-lg mt-8'
 								onClick={toggleSidebar}>
 								Get started
@@ -168,7 +168,7 @@ export default function Header() {
 										d='M9 5l7 7-7 7'
 									/>
 								</svg>
-							</button>
+							</Link>
 						</nav>
 					</div>
 				</div>

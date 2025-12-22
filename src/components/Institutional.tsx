@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Institutional() {
 	return (
@@ -31,7 +32,8 @@ export default function Institutional() {
 						goals.
 					</p>
 
-					<button className='inline-flex items-center gap-2 border border-white/30 text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition-colors'>
+					<Link href="https://onelink.to/mj2p8q" target="_blank" rel="noopener noreferrer"
+					  className='inline-flex items-center gap-2 border border-white/30 text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition-colors'>
 						Learn more
 						<svg
 							className='w-4 h-4'
@@ -45,7 +47,7 @@ export default function Institutional() {
 								d='M9 5l7 7-7 7'
 							/>
 						</svg>
-					</button>
+					</Link>
 				</div>
 			</div>
 		</section>
