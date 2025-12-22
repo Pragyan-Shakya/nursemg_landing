@@ -59,75 +59,66 @@ export default function TrustedBy() {
 				<div className='grid md:grid-cols-3 gap-6 lg:gap-8'>
 					<div className='bg-[#796B83] rounded-2xl p-6 text-white'>
 						<p className='text-sm leading-relaxed mb-6'>
-							&ldquo; I struggled with traditional study methods
-							until I discovered this app. The flashcards and
-							spaced repetition techniques were game-changers for
-							me. I passed the NCLEX on my first try! &rdquo;
+						NeuroFlip transformed my study approach. Active recall and spaced repetition helped me master key topics. The flashcards were precise, covering everything essential for NEET PG success.					
 						</p>
 						<div className='flex items-center gap-3'>
 							<div className='w-12 h-12 bg-gray-300 rounded-full overflow-hidden'>
 								<Image
-									src='/assets/sarah.jpg'
-									alt='Sarah M., RN'
+									src='/assets/testimonial/1.jpeg'
+									alt='Dr. Ayan Agrawal'
 									width={48}
 									height={48}
 									className='w-full h-full object-cover'
 								/>
 							</div>
 							<div>
-								<h4 className='font-semibold'>Sarah M., RN</h4>
+								<h4 className='font-semibold'>Dr. Ayan Agrawal</h4>
 								<p className='text-sm text-purple-200'>
-									MBBS Student
+									AIR 132
 								</p>
 							</div>
 						</div>
 					</div>
 					<div className='bg-[#796B83] rounded-2xl p-6 text-white'>
 						<p className='text-sm leading-relaxed mb-6'>
-							&ldquo; I struggled with traditional study methods
-							until I discovered this app. The flashcards and
-							spaced repetition techniques were game-changers for
-							me. I passed the NCLEX on my first try! &rdquo;
+							Managing multiple resources was tough until I found NeuroFlip. It simplified revision, keeping everything structured. The interactive format kept me engaged and improved my retention.	
 						</p>
 						<div className='flex items-center gap-3'>
 							<div className='w-12 h-12 bg-gray-300 rounded-full overflow-hidden'>
 								<Image
-									src='/assets/sarah.jpg'
-									alt='Sarah M., RN'
+									src='/assets/testimonial/2.jpeg'
+									alt='Dr. Pratha Gupta'
 									width={48}
 									height={48}
 									className='w-full h-full object-cover'
 								/>
 							</div>
 							<div>
-								<h4 className='font-semibold'>Sarah M., RN</h4>
+								<h4 className='font-semibold'>Dr. Pratha Gupta</h4>
 								<p className='text-sm text-purple-200'>
-									MBBS Student
+									NEET 500
 								</p>
 							</div>
 						</div>
 					</div>
 					<div className='bg-[#796B83] rounded-2xl p-6 text-white'>
 						<p className='text-sm leading-relaxed mb-6'>
-							&ldquo; I struggled with traditional study methods
-							until I discovered this app. The flashcards and
-							spaced repetition techniques were game-changers for
-							me. I passed the NCLEX on my first try! &rdquo;
+						Cramming was stressful, but NeuroFlip changed that. The strategic approach strengthened weak areas, boosting my confidence before the fmge exam. It is must for every FMGE aspirants.									
 						</p>
 						<div className='flex items-center gap-3'>
 							<div className='w-12 h-12 bg-gray-300 rounded-full overflow-hidden'>
 								<Image
-									src='/assets/sarah.jpg'
-									alt='Sarah M., RN'
+									src='/assets/testimonial/3.jpeg'
+									alt='Dr. Gunal Kamal'
 									width={48}
 									height={48}
 									className='w-full h-full object-cover'
 								/>
 							</div>
 							<div>
-								<h4 className='font-semibold'>Sarah M., RN</h4>
+								<h4 className='font-semibold'>Dr. Gunal Kamal</h4>
 								<p className='text-sm text-purple-200'>
-									MBBS Student
+									FMGE pass
 								</p>
 							</div>
 						</div>
