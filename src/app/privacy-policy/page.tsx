@@ -1,7 +1,6 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import type { Metadata } from 'next';
-import Link from 'next/link';
 
 export const metadata: Metadata = {
 	title: 'Privacy Policy | NurseMG',
