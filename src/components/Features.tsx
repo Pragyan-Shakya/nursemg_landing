@@ -6,11 +6,10 @@ export default function Features() {
 			<div className='max-w-7xl mx-auto'>
 				<div className='text-center mb-16 max-w-[50rem] mx-auto'>
 					<h2 className='text-4xl md:text-5xl font-semibold text-gray-900 mb-6'>
-						Achieve NCLEX success with NurseMG!
+						Your Revision for NEET-PG is incomplete without Neuroflip
 					</h2>
 					<p className='text-gray-600 text-lg max-w-3xl mx-auto'>
-						nursemg helps aspirants retain what they study so that
-						they are more prepared than ever to crack Nclex exams.
+						Beat the Rush – Prep Early and Avoid Last-Minute Cramming with Neuroflip!
 					</p>
 				</div>
 
@@ -25,13 +24,10 @@ export default function Features() {
 									height={24}></Image>
 							</div>
 							<h4 className='text-xl font-semibold text-gray-900 mb-3'>
-								Result-based learning
+								Proven Technique for Revision
 							</h4>
 							<p className='text-gray-600 leading-relaxed text-sm'>
-								By leveraging the principles of spaced
-								repetition and active recall, learners can
-								achieve mastery over complex subjects with
-								greater efficiency
+								Unlike Traditional methods, Neuroflip flashcards uses scientifically proven methods like active recall and spaced repetition boosting retention by over 50%
 							</p>
 						</div>
 
@@ -44,12 +40,10 @@ export default function Features() {
 									height={24}></Image>
 							</div>
 							<h4 className='text-xl font-semibold text-gray-900 mb-3'>
-								High yield content
+								Daily Capsules for Consistency
 							</h4>
 							<p className='text-gray-600 leading-relaxed text-sm'>
-								Master key exam topics that are frequently
-								tested, condensed into easy-to-digest,
-								bite-sized flashcards for effective learning.
+								Neuroflip ensures consistency with its daily capsule of High Yield Topics, handpicked and crafted by NEET-PG toppers.
 							</p>
 						</div>
 					</div>
@@ -72,13 +66,10 @@ export default function Features() {
 									height={24}></Image>
 							</div>
 							<h4 className='text-xl font-semibold text-gray-900 mb-3'>
-								Performance analysis
+								All contents under a single roof.
 							</h4>
 							<p className='text-gray-600 leading-relaxed text-sm'>
-								Track your progress and performance effortlessly
-								with our app&apos;s built-in analytics, ensuring
-								you stay on top of your study goals and excel in
-								the NCLEX exam.
+								Neuroflip offers all the must-know volatile topics for NEET-PG (includes BTR + More) in bite – sized, easy to digest flashcards all in one place.
 							</p>
 						</div>
 
@@ -91,12 +82,10 @@ export default function Features() {
 									height={24}></Image>
 							</div>
 							<h4 className='text-xl font-semibold text-gray-900 mb-3'>
-								High yield content
+								Study Anytime, Anywhere
 							</h4>
 							<p className='text-gray-600 leading-relaxed text-sm'>
-								Master key exam topics that are frequently
-								tested, condensed into easy-to-digest,
-								bite-sized flashcards for effective learning.
+								With Neuroflip, you can master a topic in just minutes. Revise an important topic even with 5 minutes to spare.
 							</p>
 						</div>
 					</div>

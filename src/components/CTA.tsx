@@ -10,20 +10,16 @@ export default function CTA() {
 						{/* Left Content */}
 						<div className=''>
 							<h2 className='text-4xl md:text-5xl font-semibold text-gray-900 mb-6 leading-tight'>
-								Pass NCLEX at your first attempt
+								Improve your NEET-PG Score – Guaranteed
 							</h2>
 
 							<p className='text-gray-600 text-sm mb-8 leading-relaxed'>
-								Nursemg has 7000+ curated high yield
-								flashcards covering every high yield topics.
-								These cards are expertly designed to
-								simplify complex topics, ensuring easy
-								preparation.
+								With NeuroFlip, you can prepare effectively and avoid the stress of last-minute cramming. Our flashcards and daily capsules ensure you retain key concepts through consistent review, helping you stay organized and making your exam ready. 
 							</p>
 
 							{/* App Store Buttons */}
 							<div className='flex flex-col sm:flex-row gap-4'>
-								<Link href='https://play.google.com/store/apps/details?id=com.neuroflip.nclex100' target='_blank' rel='noopener noreferrer' className=' text-black px-8 py-3 border-1 border-black rounded-full font-semibold flex items-center gap-3 '>
+								<Link href='https://play.google.com/store/apps/details?id=com.neuroflip.neetpg' target='_blank' rel='noopener noreferrer' className=' text-black px-8 py-3 border-1 border-black rounded-full font-semibold flex items-center gap-3 '>
 									<svg
 										className='w-8 h-8'
 										viewBox='0 0 24 24'
@@ -44,7 +40,7 @@ export default function CTA() {
 									</div>
 								</Link>
 
-								<Link href='https://apps.apple.com/us/app/nclex-flashcards/id1592043274' target='_blank' rel='noopener noreferrer' className=' text-black px-8 py-3 border-1 border-black rounded-full font-semibold flex items-center gap-3 '>
+								<Link href='https://apps.apple.com/us/app/neuroflip-neet-pg-flashcards/id6474674721' target='_blank' rel='noopener noreferrer' className=' text-black px-8 py-3 border-1 border-black rounded-full font-semibold flex items-center gap-3 '>
 									<svg
 										className='w-8 h-8 '
 										viewBox='0 0 24 24'

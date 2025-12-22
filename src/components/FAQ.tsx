@@ -22,7 +22,7 @@ export default function FAQ() {
 	useEffect(() => {
 		const fetchFAQs = async () => {
 			try {
-				const response = await fetch('https://011403120524.neetcrack.com/api/faqs');
+				const response = await fetch('https://admin.neuroflip.com/api/faqs');
 				if (!response.ok) {
 					throw new Error('Failed to fetch FAQs');
 				}

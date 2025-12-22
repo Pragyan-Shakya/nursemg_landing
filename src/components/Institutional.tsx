@@ -25,11 +25,7 @@ export default function Institutional() {
 					</h2>
 
 					<p className='text-purple-200 text-lg mb-8 leading-relaxed max-w-lg'>
-						We partner with academic programs to offer bulk pricing
-						on our suite of nursing exam prep solutions. Collaborate
-						with us to customize a package that fits your
-						students&apos; needs and aligns with your institution&apos;s
-						goals.
+						Partner with NeuroFlip to give your students the edge in NEET PG preparation. We offer bulk pricing on our comprehensive flashcards solutions. Collaborate with us to create a solution that boosts student success and aligns with your institution’s academic goals.
 					</p>
 
 					<Link href="https://onelink.to/mj2p8q" target="_blank" rel="noopener noreferrer"

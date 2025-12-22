@@ -9,25 +9,17 @@ export default function WhyChoose() {
 						<h2 className='text-4xl md:text-5xl font-semibold text-gray-900 leading-tight'>
 							Why choose
 							<br />
-							nursemg flashcards
+							neuroflip flashcards
 						</h2>
 						<p className='text-gray-600 text-base mb-6 leading-relaxed'>
-							Research consistently shows that flashcards
-							significantly improve retention rates and
-							learning outcomes.
+							Research consistently shows that flashcards significantly improve retention rates and learning outcomes.
 						</p>
 					</div>
 
 					<div>
 						<div className='pt-12'>
 							<p className='text-gray-600 text-base leading-relaxed'>
-								Utilizing spaced repetition and active
-								recall, learners can optimize study sessions
-								and master complex subjects efficiently.
-								Spaced repetition, a concept from early
-								20th-century educational psychology,
-								enhances memory by revisiting information at
-								strategic intervals.
+								Utilizing spaced repetition and active recall, learners can optimize study sessions and master complex subjects efficiently. Spaced repetition, a concept from early 20th-century educational psychology, enhances memory by revisiting information at strategic intervals.
 							</p>
 						</div>
 					</div>
@@ -60,9 +52,7 @@ export default function WhyChoose() {
 							Focused, High-Impact Study
 						</h4>
 						<p className='text-gray-600 text-sm leading-relaxed'>
-							Our flashcards cover frequently tested topics,
-							condensing vital information into bite-sized,
-							easily digestible pieces.
+							Our flashcards cover frequently tested topics, condensing vital information into bite-sized, easily digestible pieces.
 						</p>
 					</div>
 
@@ -79,9 +69,7 @@ export default function WhyChoose() {
 							Boost Memory Retention
 						</h4>
 						<p className='text-gray-600 text-sm leading-relaxed'>
-							Leverage the power of spaced repetition and
-							active recall to enhance long- term memory
-							retention.
+							Leverage the power of spaced repetition and active recall to enhance long-term memory retention.
 						</p>
 					</div>
 				</div>

@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '011403120524.neetcrack.com',
+        hostname: 'admin.neuroflip.com',
       },
     ],
   },

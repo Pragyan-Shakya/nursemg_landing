@@ -42,7 +42,7 @@ export default function BlogDetailPage({ params }: BlogPageProps) {
 		const fetchBlog = async () => {
 			try {
 				const response = await fetch(
-					`https://011403120524.neetcrack.com/api/blogs/${resolvedParams.slug}`,
+					`https://admin.neuroflip.com/api/blogs/${resolvedParams.slug}`,
 				);
 				if (!response.ok) {
 					throw new Error('Failed to fetch blog');

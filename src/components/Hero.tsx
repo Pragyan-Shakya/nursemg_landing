@@ -22,7 +22,7 @@ export default function Hero() {
 								height={15}></Image>
 						</span>
 						<span className='text-xs sm:text-sm font-medium'>
-							The #1 App for US NCLEX
+							The #1 App for NEET-PG/FMGE
 						</span>
 						<span className='text-yellow-300'>
 							<Image
@@ -36,25 +36,25 @@ export default function Hero() {
 
 					<h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-white mb-4 font-semibold'>
 						Achieve{' '}
-						<span className='bg-[#DE8459] text-white px-4 py-2 rounded-tl-[50px] rounded-br-[50px]'>
-							<span className='font-extralight italic'>s</span>
-							<span className='font-semibold '>uccess</span>
+						<span className='bg-[#DE8459] text-white px-6 py-0 rounded-tl-[50px] rounded-br-[50px]'>
+							<span className='font-extralight !font-neue-regrade'>NE</span>
+							<span className='font-semibold !font-neue-regrade'>ET</span>
+							<span className='font-bold !font-neue-regrade'> PG</span>
 						</span>{' '}
 						with
 					</h1>
 					<h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-white mb-5 font-semibold'>
-						NCLEX flashcards
+						Success with Neuroflip Flashcards
 					</h2>
 
 					<p className='text-purple-200 text-base sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto'>
-						Nursemg helps aspirants retain what they study so that
-						they are more prepared than ever to crack NCLEX exams.
+						Neuroflip helps you retain what you study so that you are more prepared than ever to crack NEET-PG exams.
 					</p>
 
 					{/* App Store Buttons */}
 					<div className='flex flex-col sm:flex-row gap-4 justify-center mb-12 sm:mb-16'>
 						<Link
-							href='https://play.google.com/store/apps/details?id=com.neuroflip.nclex100'
+							href='https://play.google.com/store/apps/details?id=com.neuroflip.neetpg'
 							target='_blank'
 							rel='noopener noreferrer'
 							className='bg-white text-black px-6 sm:px-10 py-2 rounded-full font-semibold flex items-center gap-3 justify-center'>
@@ -77,7 +77,7 @@ export default function Hero() {
 								</div>
 							</div>
 						</Link>
-						<Link href='https://apps.apple.com/us/app/nclex-flashcards/id1592043274' target='_blank' rel='noopener noreferrer' className='bg-white text-black px-6 sm:px-10 py-2 rounded-full font-semibold flex items-center gap-3 justify-center'>
+						<Link href='https://apps.apple.com/us/app/neuroflip-neet-pg-flashcards/id6474674721' target='_blank' rel='noopener noreferrer' className='bg-white text-black px-6 sm:px-10 py-2 rounded-full font-semibold flex items-center gap-3 justify-center'>
 							<svg
 								className='w-10 h-10'
 								viewBox='0 0 24 24'
@@ -99,9 +99,9 @@ export default function Hero() {
 						</Link>
 					</div>
 
-					<div className='w-60 h-60 md:w-100 md:h-100 mx-auto flex items-center justify-center z-10 relative bottom-0'>
+					<div className='w-60 h-60 md:w-100 md:h-100 mx-auto flex items-center justify-center z-10 relative -bottom-10'>
 						<Image
-							src='/assets/female-doctor.png'
+							src='/assets/doctor.svg'
 							alt='Doctor'
 							width={350}
 							height={450}></Image>
@@ -133,9 +133,9 @@ export default function Hero() {
 						</div>
 					</div>
 
-					<div className='absolute bottom-0 md:-bottom-20 left-1/2 transform -translate-x-1/2 flex items-center justify-center pointer-events-none z-0'>
+					<div className='absolute bottom-0 md:-bottom-40 left-1/2 transform -translate-x-1/2 flex items-center justify-center pointer-events-none z-0'>
 						<span className='text-[6rem] md:text-[10rem] lg:text-[22rem] font-bold text-[#796B83] whitespace-nowrap'>
-							NCLEX
+							NEET PG
 						</span>
 					</div>
 				</div>

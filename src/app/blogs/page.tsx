@@ -26,7 +26,7 @@ interface Blog {
 async function fetchBlogs(): Promise<Blog[]> {
 	try {
 		const response = await fetch(
-			'https://011403120524.neetcrack.com/api/blogs',
+			'https://admin.neuroflip.com/api/blogs',
 			{
 				cache: 'no-store' // This ensures fresh data on each request
 			}

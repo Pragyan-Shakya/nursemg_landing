@@ -18,8 +18,8 @@ export default function Header() {
 						<div className='flex items-center gap-2'>
 							<Link href='/'>
 								<Image
-									src='/assets/logo_white.png'
-									alt='nursemg Logo'
+									src='/assets/logo.svg'
+									alt='Neuroflip Logo'
 									width={106}
 									height={24}
 									className='cursor-pointer'

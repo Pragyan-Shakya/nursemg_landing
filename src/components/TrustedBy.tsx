@@ -15,14 +15,13 @@ export default function TrustedBy() {
 			<div className='max-w-7xl mx-auto relative z-10'>
 				<div className='mb-12'>
 					<h2 className='text-4xl md:text-5xl font-bold text-white mb-4'>
-						Trusted by nursing
+						Trusted by NEET-PG & FMGE 
 					</h2>
 					<h3 className='text-4xl md:text-5xl font-bold text-white mb-6'>
-						students everywhere
+						students​
 					</h3>
 					<p className='text-purple-200 max-w-lg'>
-						nursemg helps aspirants retain what they study so that
-						they are more prepared than ever to crack Nclex exams.
+						Neurofiip helps aspirants retain what they study so that they are more prepared than ever to crack NEET-PG exams.
 					</p>
 				</div>
 
