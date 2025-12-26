@@ -28,7 +28,7 @@ async function fetchBlogs(): Promise<Blog[]> {
 		const response = await fetch(
 			'https://admin.neuroflip.com/api/blogs',
 			{
-				cache: 'no-store' // This ensures fresh data on each request
+				next: { revalidate: 60 } // Revalidate every 60 seconds
 			}
 		);
 		if (!response.ok) {
