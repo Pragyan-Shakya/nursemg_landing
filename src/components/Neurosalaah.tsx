@@ -25,7 +25,7 @@ export default function neurosalaah() {
                                 For NEET UG, PG & global exams
                             </p>
 
-                            <div className='rounded-xl w-full bg-gray-300 p-2 flex flex-col sm:flex-row sm:justify-between gap-2 border-2 border-dashed border-orange-primary '>
+                            <div className='rounded-xl w-full bg-orange-50 p-2 flex flex-col sm:flex-row sm:justify-between gap-2 border-2 border-dashed border-orange-primary '>
                                 <div>
                                     <p className='text-purple-dark text-[18px] md:text-[21px] lg:text-[24px] font-bold'>Use code: <span className='text-lg md:text-xl lg:text-2xl'>NEUROSALAAH</span></p>
                                 </div>

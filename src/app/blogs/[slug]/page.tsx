@@ -136,12 +136,12 @@ export default function BlogDetailPage({ params }: BlogPageProps) {
 					<article className='bg-gradient-to-b from-purple-primary from-50% to-white to-50%'>
 						<div className='max-w-5xl mx-auto px-4 py-4 md:p-8'>
 							{blog.blog_image && (
-								<div className='relative h-[270px] md:h-[520px] rounded-2xl overflow-hidden mb-8'>
+								<div className='relative h-[270px] md:h-[520px] rounded-2xl mb-8'>
 									<Image
 										src={blog.blog_image}
 										alt={blog.title}
 										fill
-										className='object-cover'
+										className='object-contain drop-shadow-lg'
 									/>
 								</div>
 							)}
