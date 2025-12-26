@@ -5,7 +5,6 @@ import Features from '@/components/Features';
 import TrustedBy from '@/components/TrustedBy';
 import WhyChoose from '@/components/WhyChoose';
 import Institutional from '@/components/Institutional';
-import CTA from '@/components/CTA';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
