@@ -62,7 +62,7 @@ export default function Footer() {
 						</p>
 					</div>
 
-					<div className='bg-purple-primary pt-12 sm:pt-16 px-6 sm:px-12 rounded-t-4xl'>
+					<div className='bg-purple-primary pt-12  sm:pt-16 px-6 sm:px-12 rounded-t-4xl'>
 						{/* Mobile: Quick Links and Contact Us side by side */}
 						<div className='grid grid-cols-2 sm:hidden gap-6 mb-8 p-'>
 							<div>
@@ -97,7 +97,7 @@ export default function Footer() {
 								<p className='text-purple-200 text-sm mt-4'>© 2024 Neuroflip eductech pvt ltd​</p>
 							</div>
 
-							<div>
+							<div className='mx-auto'>
 								<h3 className='text-lg font-semibold text-white mb-4'>
 									CONTACT US
 								</h3>
@@ -144,7 +144,7 @@ export default function Footer() {
 						</div>
 
 						{/* Mobile: Phone image */}
-						<div className='sm:hidden flex justify-center mb-8'>
+						<div className='sm:hidden flex justify-center'>
 							<Image
 								src='/assets/hand-phone.svg'
 								alt='Mobile App'
@@ -196,7 +196,7 @@ export default function Footer() {
 								/>
 							</div>
 
-							<div>
+							<div className='lg:mx-auto pb-4'>
 								<h3 className='text-lg sm:text-xl font-semibold text-white '>
 									CONTACT US
 								</h3>

@@ -3,11 +3,11 @@ import Header from '@/components/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Privacy Policy | NurseMG',
-	description: 'Privacy policy for NurseMG. Learn how we collect, use, and protect your personal information.',
+	title: 'Privacy Policy | Neuroflip',
+	description: 'Privacy policy for Neuroflip. Learn how we collect, use, and protect your personal information.',
 	openGraph: {
-		title: 'Privacy Policy | NurseMG',
-		description: 'Privacy policy for NurseMG. Learn how we protect your personal information.',
+		title: 'Privacy Policy | Neuroflip',
+		description: 'Privacy policy for Neuroflip. Learn how we protect your personal information.',
 	},
 };
 
@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
 								INTRODUCTION
 							</h2>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
-								Nursemg is a Personalized Online Nursing Licensing Preparation Platform operated by Neuroflip, LLC (hereinafter referred to as “We”, “Us”). We are a company registered in Delaware, US. Neuroflip, LLC with all its products and members are committed to respect your online privacy and recognize your need for appropriate protection and management of any personally identifiable information (“Personal Information”) you share with us. “Personal Information” means any information that may be used to identify an individual, including, but not limited to, a first , middle and last name, a phone number, a home or other physical address and an email address or other contact information, whether at work or at home. In general, you can visit https://nursemg.com and our Facebook & Instagram page without telling us who you are or revealing any Personal Information about yourself.
+								Neuroflip is a Personalized Online NEET PG/FMGE Licensing Preparation Platform operated by Neuroflip Pvt Ltd (hereinafter referred to as "We", "Us"). We are a company registered in India and have our office located at Tamilnadu, India. Neuroflip Pvt Ltd with all its products and members are committed to respect your online privacy and recognize your need for appropriate protection and management of any personally identifiable information ("Personal Information") you share with us. "Personal Information" means any information that may be used to identify an individual, including, but not limited to, a first , middle and last name, a phone number, a home or other physical address and an email address or other contact information, whether at work or at home. In general, you can visit https://neuroflip.com and our Facebook & Instagram page without telling us who you are or revealing any Personal Information about yourself.
 							</p>
 						</section>
 
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
 								COOKIES AND OTHER TRACKING TECHNOLOGIES
 							</h2>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
-								A “cookie” is a small text file that may be used, for example, to collect information about Web site activity. You may set most browsers to notify you if you receive a cookie, or you may choose to block cookies with your browser, but please note that if you choose to erase or block your cookies, you will need to re-enter your original user ID and password to gain access to certain parts of the Web site.
+								A "cookie" is a small text file that may be used, for example, to collect information about Web site activity. You may set most browsers to notify you if you receive a cookie, or you may choose to block cookies with your browser, but please note that if you choose to erase or block your cookies, you will need to re-enter your original user ID and password to gain access to certain parts of the Web site.
 							</p>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
 								Tracking technologies may record information such as Internet domain and host names; Internet protocol (IP) addresses; browser software and operating system types; click stream patterns; and dates and times that our site is accessed. Our use of cookies and other tracking technologies allows us to improve our Web site and your Web experience. We may also analyze information that does not contain Personal Information for trends and statistics.
@@ -50,7 +50,7 @@ export default function PrivacyPolicyPage() {
 								THIRD PARTY SERVICES
 							</h2>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
-								Third parties provide certain services available on https://nursemg.com on Neuroflip, LLC’s behalf. Neuroflip, LLC’ may provide information, including Personal Information, that Neuroflip, LLC’ collects on the Web to third-party service providers to help us deliver programs, products, information, and services. Service providers are also an important means by which Neuroflip, LLC’ maintains its Web site and mailing lists. Neuroflip, LLC’ will take reasonable steps to ensure that these third-party service providers are obligated to protect Personal Information on Neuroflip, LLC’s behalf. We do not intend to transfer Personal Information without your consent to third parties who are not bound to act on Neuroflip, LLC’s behalf unless such transfer is legally required. Similarly, it is against Neuroflip Private Limited’s policy to sell Personal Information collected online without consent.
+								Third parties provide certain services available on https://neuroflip.com on Neuroflip Private Limited's behalf. Neuroflip Private Limited' may provide information, including Personal Information, that Neuroflip Private Limited' collects on the Web to third-party service providers to help us deliver programs, products, information, and services. Service providers are also an important means by which Neuroflip Private Limited' maintains its Web site and mailing lists. Neuroflip Private Limited' will take reasonable steps to ensure that these third-party service providers are obligated to protect Personal Information on Neuroflip Private Limited's behalf. We do not intend to transfer Personal Information without your consent to third parties who are not bound to act on Neuroflip Private Limited's behalf unless such transfer is legally required. Similarly, it is against Neuroflip Private Limited's policy to sell Personal Information collected online without consent.
 							</p>
 							
 						</section>
@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage() {
 								YOUR CONSENT
 							</h2>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
-								By using this Web site, you consent to the terms of our Online Privacy Policy and to Neuroflip, LLC’s processing of Personal Information for the purposes given above as well as those explained where Neuroflip Private Limited’ collects Personal Information on the Web.
+								By using this Web site, you consent to the terms of our Online Privacy Policy and to Neuroflip Private Limited's processing of Personal Information for the purposes given above as well as those explained where Neuroflip Private Limited' collects Personal Information on the Web.
 							</p>
 						</section>
 
@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
 								DELETION OF YOUR PERSONAL INFORMATION
 							</h2>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
-								You may delete your account at any time, and your personal information will be deleted in the normal course of business pursuant to our current data retention practices. You may request to have all your personal information deleted by contacting info@nursemg.com. We will comply with all deletion requests to the extent permissible by law and will not delete data that we are legally required to maintain (such as data subject to a current and valid preservation order or transaction data required for audit or substantiation purposes).
+								You may delete your account at any time, and your personal information will be deleted in the normal course of business pursuant to our current data retention practices. You may request to have all your personal information deleted by contacting info@neuroflip.com. We will comply with all deletion requests to the extent permissible by law and will not delete data that we are legally required to maintain (such as data subject to a current and valid preservation order or transaction data required for audit or substantiation purposes).
 							</p>
 							
 						</section>
@@ -97,13 +97,13 @@ export default function PrivacyPolicyPage() {
 								INFORMATION SHARING AND DISCLOSURE
 							</h2>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
-								Neuroflip, LLC does not rent, sell, or share personal information about you with other people (save with your consent) or non- affiliated companies except to provide products or services you’ve requested, when we have your permission, or under the following circumstances.
+								Neuroflip Limited' does not rent, sell, or share personal information about you with other people (save with your consent) or non- affiliated companies except to provide products or services you've requested, when we have your permission, or under the following circumstances
 							</p>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
-								We provide the information to trusted partners who work on behalf of or with Neuroflip, LLC’ under confidentiality agreements. These companies may use your personal information to help Neuroflip, LLC’ communicate with you about offers from Neuroflip, LLC’ and our marketing partners. However, these companies do not have any independent right to share this information. We respond to subpoenas, court orders, or legal process, or to establish or exercise our legal rights or defend against legal claims; We believe it is necessary to share information in order to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of Neuroflip, LLC’s terms of use, or as otherwise required by law. We transfer information about you if Neuroflip, LLC’ is acquired by or merged with another company. In this event, Neuroflip, LLC’ will notify you before information about you is transferred and becomes subject to a different privacy policy.
+								We provide the information to trusted partners who work on behalf of or with Neuroflip Private Limited' under confidentiality agreements. These companies may use your personal information to help Neuroflip Private Limited' communicate with you about offers from Neuroflip Private Limited' and our marketing partners. However, these companies do not have any independent right to share this information. We respond to subpoenas, court orders, or legal process, or to establish or exercise our legal rights or defend against legal claims; We believe it is necessary to share information in order to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of Neuroflip Private Limited's terms of use, or as otherwise required by law. We transfer information about you if Neuroflip Private Limited' is acquired by or merged with another company. In this event, Neuroflip Private Limited' will notify you before information about you is transferred and becomes subject to a different privacy policy.
 							</p>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
-								Neuroflip, LLC’ displays targeted advertisements based on personal information. Advertisers (including ad serving companies) may assume that people who interact with, view, or click on targeted ads meet the targeting criteria – for example, women ages 18-24 from a particular geographic area. Neuroflip Private Limited’ does not provide any personal information to the advertiser when you interact with or view targeted advertisements. However, by interacting with or viewing an ad you are consenting to the possibility that the advertiser will make the assumption that you meet the targeting criteria used to display the advertisement. Neuroflip, LLC’ advertisers include financial service providers (such as banks, insurance agents, stock brokers and mortgage lenders) and non-financial companies (such as stores, airlines, and software companies). Neuroflip, LLC’ works with vendors, partners, advertisers, and other service providers in different industries and categories of business.
+								Neuroflip Private Limited' displays targeted advertisements based on personal information. Advertisers (including ad serving companies) may assume that people who interact with, view, or click on targeted ads meet the targeting criteria - for example, women ages 18-24 from a particular geographic area. Neuroflip Private Limited' does not provide any personal information to the advertiser when you interact with or view targeted advertisements. However, by interacting with or viewing an ad you are consenting to the possibility that the advertiser will make the assumption that you meet the targeting criteria used to display the advertisement. Neuroflip Private Limited' advertisers include financial service providers (such as banks, insurance agents, stock brokers and mortgage lenders) and non-financial companies (such as stores, airlines, and software companies). Neuroflip Private Limited' works with vendors, partners, advertisers, and other service providers in different industries and categories of business.
 							</p>
 						</section>
 
@@ -127,10 +127,11 @@ export default function PrivacyPolicyPage() {
 								In the alternative, you may write to us at the following address:
 							</p>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
-								info@nursemg.com <br />
-								Neuroflip, LLC <br />
-								131 Continental Dr, Suite 305 <br />
-								Newark, DE 19713 US
+								info@neuroflip.com <br />
+								Neuroflip Ltd <br />
+								No 12, Mudis Enclave, Suleeswaranpati Pollachi <br />
+								642006 <br />
+								Tamilnadu, India
 							</p>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
 								Please mention the changes to be made clearly and we will try and update the requite changes/ modifications as requested by you in your letter.
@@ -160,13 +161,13 @@ export default function PrivacyPolicyPage() {
 								CHANGES TO THIS PRIVACY POLICY
 							</h2>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
-								Neuroflip, LLC’ reserves the right to update, change or modify this policy at any time. The policy shall come to effect from the date of such update, change or modification. Neuroflip, LLC shall not be liable for any loss or damage sustained by reason of any disclosure (inadvertent or otherwise) of any information concerning the user’s account and / or information relating to or regarding online transactions using credit cards / debit cards and / or their verification process and particulars nor for any error, omission or inaccuracy with respect to any information so disclosed and used whether or not in pursuance of a legal process or otherwise.
+								Neuroflip Private Limited' reserves the right to update, change or modify this policy at any time. The policy shall come to effect from the date of such update, change or modification. Neuroflip Private Limited shall not be liable for any loss or damage sustained by reason of any disclosure (inadvertent or otherwise) of any information concerning the user's account and / or information relating to or regarding online transactions using credit cards / debit cards and / or their verification process and particulars nor for any error, omission or inaccuracy with respect to any information so disclosed and used whether or not in pursuance of a legal process or otherwise.
 							</p>
 							<p className='text-gray-500 text-sm leading-loose mb-4 font-inter'>
-								Neuroflip, LLC’ welcomes your comments regarding this privacy statement at the contact address given at the website. Should there be any concerns about contravention of this Privacy Policy, Neuroflip, LLC’ will employ all commercially reasonable efforts to address the same.
+								Neuroflip Private Limited' welcomes your comments regarding this privacy statement at the contact address given at the website. Should there be any concerns about contravention of this Privacy Policy, Neuroflip Private Limited' will employ all commercially reasonable efforts to address the same.
 							</p>
 							<p className='text-gray-500 text-sm text- leading-loose mb-4 font-inter'>
-								Note: The terms in this agreement may be changed by Neuroflip, LLC at any time.
+								Note: The terms in this agreement may be changed by Neuroflip Private Limited at any time.
 							</p>
 						</section>
 					</div>

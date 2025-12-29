@@ -42,14 +42,14 @@ export default function neurosalaah() {
 
                             {/* App Store Buttons */}
                             <div className='flex flex-col sm:flex-row gap-4'>
-                                <Link href='https://salaahshots.com/' target='_blank' rel='noopener noreferrer' className=' text-white px-4 md:px-8 py-1 bg-purple-dark rounded-full font-light flex items-center gap-3 text-[18px] md:text-[22px] lg:text-[26px] items-center justify-center'>
+                                <Link href='https://salaahshots.com/' target='_blank' rel='noopener noreferrer' className=' text-white px-4 md:px-8 py-1 bg-purple-dark rounded-full font-light flex gap-3 text-[18px] md:text-[22px] lg:text-[26px] items-center justify-center'>
                                     Find your mentor
                                 </Link>
                             </div>
                         </div>
 
                         {/* Right Content - Mobile App Image */}
-                        <div className='flex justify-center'>
+                        <div className='flex justify-end'>
                             <Image
                                 src='/assets/SALAAHXNEURO.png'
                                 alt='Mobile App'
