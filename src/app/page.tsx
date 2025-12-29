@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import TrustedBy from '@/components/TrustedBy';
@@ -19,6 +20,9 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<div>
+			{/* Header */}
+			<Header />
+
 			{/* Hero Section */}
 			<Hero />
 

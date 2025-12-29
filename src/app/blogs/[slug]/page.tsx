@@ -51,6 +51,16 @@ async function fetchBlog(slug: string): Promise<Blog | null> {
 	}
 }
 
+function fixImageUrls(html: string): string {
+	const baseUrl = 'https://admin.neuroflip.com';
+
+	// Replace img src attributes that start with /storage
+	return html.replace(
+		/(<img[^>]+src=["'])\/storage\//g,
+		`$1${baseUrl}/storage/`
+	);
+}
+
 export async function generateMetadata(
 	{ params }: BlogPageProps
 ): Promise<Metadata> {
@@ -91,10 +101,9 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
 
 	return (
 		<div className='min-h-screen bg-white'>
-			<div className='min-h-screen'>
-				<Header/>
+			<Header/>
 
-				<main className=''>
+			<main className=''>
 					<article className='bg-purple-primary'>
 						<header className='  max-w-5xl mx-auto  px-8 py-8'>
 							<h1 className='text-2xl md:text-5xl font-semibold text-center text-white mb-6 font-instrument leading-tight'>
@@ -158,14 +167,14 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
 						</div>
 					</article>
 				</main>
-			</div>
+
 			<section className='bg-white'>
 				<article className='max-w-4xl mx-auto px-8 py-4'>
 					<div className='prose prose-lg max-w-none'>
 						<div
 							className='text-gray-900 leading-relaxed font-inter'
 							dangerouslySetInnerHTML={{
-								__html: blog.description,
+								__html: fixImageUrls(blog.description),
 							}}
 						/>
 					</div>

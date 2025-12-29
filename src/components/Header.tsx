@@ -2,17 +2,39 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+	const [isSticky, setIsSticky] = useState(false);
 
 	const toggleSidebar = () => {
 		setIsSidebarOpen(!isSidebarOpen);
 	};
+
+	useEffect(() => {
+		const handleScroll = () => {
+			// Get viewport height
+			const viewportHeight = window.innerHeight;
+			// Check if scrolled past 100vh
+			if (window.scrollY > viewportHeight) {
+				setIsSticky(true);
+			} else {
+				setIsSticky(false);
+			}
+		};
+
+		// Add scroll event listener
+		window.addEventListener('scroll', handleScroll);
+
+		// Cleanup
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
     return (
         <>
-            <header className='bg-purple-primary'>
+            <header className={`${isSticky ? 'sticky top-0 z-50' : ''} bg-purple-primary transition-all duration-300`}>
 				<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-4'>
 					<div className='flex justify-between items-center'>
 						<div className='flex items-center gap-2'>

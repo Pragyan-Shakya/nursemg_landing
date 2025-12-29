@@ -2,14 +2,11 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import Header from './Header';
 
 
 export default function Hero() {
 	return (
 		<div className=' bg-purple-primary overflow-hidden'>
-			<Header/>
-
 			<main className='relative text-center px-4 sm:px-6 py-8 sm:py-10'>
 				<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='inline-flex items-center gap-2 border-1 border-[#F3BA58] text-[#F3BA58] px-3 sm:px-4 py-2 rounded-full mb-6 sm:mb-8'>
