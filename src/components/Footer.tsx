@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
+	const currentYear = new Date().getFullYear();
+
 	return (
 		<section className='bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6'>
 			<div className='max-w-7xl mx-auto'>
@@ -94,7 +96,7 @@ export default function Footer() {
 									
 								</ul>
 
-								<p className='text-purple-200 text-sm mt-4'>© 2024 Neuroflip eductech pvt ltd​</p>
+								<p className='text-purple-200 text-sm mt-4'>© {currentYear} Neuroflip eductech pvt ltd​</p>
 							</div>
 
 							<div className='mx-auto'>
@@ -183,7 +185,7 @@ export default function Footer() {
 										</Link>
 									</li>
 								</ul>
-								<p className='text-purple-200 text-sm mt-4'>© 2024 Neuroflip eductech pvt ltd​</p>
+								<p className='text-purple-200 text-sm mt-4'>© {currentYear} Neuroflip eductech pvt ltd​</p>
 							</div>
 
 							<div className='flex justify-center'>

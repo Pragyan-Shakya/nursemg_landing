@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+
+export const metadata: Metadata = {
+	title: 'NEET PG Blogs',
+	description: 'Explore expert NEET PG preparation tips, study strategies, and medical insights from our comprehensive blog collection.',
+};
 
 interface Blog {
 	id: number;

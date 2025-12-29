@@ -1,9 +1,7 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
-import { useState, useEffect, use } from 'react';
 import Header from '@/components/Header';
 
 interface Blog {
@@ -24,6 +22,8 @@ interface Blog {
 	url: string;
 	reading_time: string;
 	tags: string[];
+	seo_title?: string;
+	seo_description?: string;
 }
 
 interface BlogPageProps {
@@ -32,48 +32,58 @@ interface BlogPageProps {
 	}>;
 }
 
-export default function BlogDetailPage({ params }: BlogPageProps) {
-	const resolvedParams = use(params);
-	const [blog, setBlog] = useState<Blog | null>(null);
-	const [loading, setLoading] = useState(true);
-	const [error, setError] = useState<string | null>(null);
-
-	useEffect(() => {
-		const fetchBlog = async () => {
-			try {
-				const response = await fetch(
-					`https://admin.neuroflip.com/api/blogs/${resolvedParams.slug}`,
-				);
-				if (!response.ok) {
-					throw new Error('Failed to fetch blog');
-				}
-				const response_data = await response.json();
-				setBlog(response_data.data);
-			} catch (err) {
-				setError(
-					err instanceof Error ? err.message : 'An error occurred',
-				);
-			} finally {
-				setLoading(false);
+async function fetchBlog(slug: string): Promise<Blog | null> {
+	try {
+		const response = await fetch(
+			`https://admin.neuroflip.com/api/blogs/${slug}`,
+			{
+				next: { revalidate: 60 } // ISR with 60 second revalidation
 			}
-		};
-
-		fetchBlog();
-	}, [resolvedParams.slug]);
-
-	if (loading) {
-		return (
-			<div className='min-h-screen bg-white flex items-center justify-center'>
-				<div className='text-gray-600'>Loading blog...</div>
-			</div>
 		);
+		if (!response.ok) {
+			return null;
+		}
+		const response_data = await response.json();
+		return response_data.data;
+	} catch (error) {
+		console.error('Error fetching blog:', error);
+		return null;
+	}
+}
+
+export async function generateMetadata(
+	{ params }: BlogPageProps
+): Promise<Metadata> {
+	const { slug } = await params;
+	const blog = await fetchBlog(slug);
+
+	if (!blog) {
+		return {
+			title: 'Blog Not Found',
+			description: 'The requested blog post could not be found.',
+		};
 	}
 
-	if (error || !blog) {
+	// Strip HTML tags from description for meta tag
+	const plainDescription = blog.description
+		.replace(/<[^>]*>/g, '')
+		.substring(0, 160);
+
+	return {
+		title: blog.seo_title ?? blog.title,
+		description: blog.seo_description ?? plainDescription,
+	};
+}
+
+export default async function BlogDetailPage({ params }: BlogPageProps) {
+	const { slug } = await params;
+	const blog = await fetchBlog(slug);
+
+	if (!blog) {
 		return (
 			<div className='min-h-screen bg-white flex items-center justify-center'>
 				<div className='text-red-600'>
-					Error: {error || 'Blog not found'}
+					Error: Blog not found
 				</div>
 			</div>
 		);
