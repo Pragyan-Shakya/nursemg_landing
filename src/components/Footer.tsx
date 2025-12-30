@@ -66,7 +66,7 @@ export default function Footer() {
 
 					<div className='bg-purple-primary pt-12  sm:pt-16 px-6 sm:px-12 rounded-t-4xl'>
 						<div className='grid grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 items-start'>
-							<div className='order-1'>
+							<div className='order-1 md:pl-15'>
 								<h3 className='text-lg sm:text-xl font-semibold text-white mb-4 sm:mb-6'>
 									QUICK LINKS
 								</h3>
@@ -106,7 +106,7 @@ export default function Footer() {
 								/>
 							</div>
 
-							<div className='flex flex-col items-end pb-4 order-2 lg:order-3'>
+							<div className='flex flex-col items-end pb-4 md:pr-15 order-2 lg:order-3'>
 								<h3 className='text-lg sm:text-xl font-semibold text-white '>
 									CONTACT US
 								</h3>
